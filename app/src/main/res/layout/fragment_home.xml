@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Progress Bar for loading indication -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <!-- Upcoming Events Section -->
+    <TextView
+        android:id="@+id/tvUpcomingEventsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Events"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"/>
+
+    <!-- "No Upcoming Events" Message -->
+    <TextView
+        android:id="@+id/tvNoUpcomingData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No upcoming events."
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:paddingBottom="8dp"/>
+
+    <!-- RecyclerView for Upcoming Events -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUpcomingEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Finished Events Section -->
+    <TextView
+        android:id="@+id/tvFinishedEventsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finished Events"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+
+    <!-- "No Finished Events" Message -->
+    <TextView
+        android:id="@+id/tvNoFinishedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No finished events."
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:paddingBottom="8dp"/>
+
+    <!-- RecyclerView for Finished Events -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFinishedEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
